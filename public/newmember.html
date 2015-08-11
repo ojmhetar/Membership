@@ -63,7 +63,7 @@
 
 					// let's just simulate something...
 					var messageEl = theForm.querySelector( '.final-message' );
-					messageEl.innerHTML = 'Welcome to EClub, ' + document.getElementById('firstName') + '!';
+					messageEl.innerHTML = 'Welcome to EClub, ' + document.getElementById('firstName').value + '!';
 					classie.addClass( messageEl, 'show' );
 				}
 			} );
