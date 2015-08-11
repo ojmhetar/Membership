@@ -45,7 +45,7 @@ app.post('/api/checkMember', function(req, res) {
     var userObject = new UserObject(); 
     
     var query = new Parse.Query(UserObject); 
-    query.equalTo("name", req.body.pid); 
+    query.equalTo("pid", req.body.pid); 
     query.find({ 
         success: function(users) { 
             if(users.length === 1) {
@@ -90,7 +90,7 @@ app.get('/api/getMember/:mem', function(req,res) {
     var UserObject = Parse.Object.extend("UserObject"); 
     var userObject = new UserObject();
     var query = new Parse.Query(UserObject); 
-    query.equalTo("name", req.params.mem); 
+    query.equalTo("pid", req.params.mem); 
     query.find({
        success: function(users) {
            if(users.length === 1) {
