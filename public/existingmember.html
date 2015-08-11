@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="eclubApp">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        
+		<script src="js/modernizr.custom.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+
+        <script src="core.js"></script> 
+	</head>
+	<body  ng-controller="callController">
+		<div class="container">
+			<section id="welcomeBack">
+                <h2 > Welcome back,  {{firstName}}!</h2>
+                <h3> You've been to <b>{{meetingCount}} meetings. </b></h3>
+			</section>
+		</div><!-- /container -->
+		
+
+	</body>
+</html>
