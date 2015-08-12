@@ -50,10 +50,19 @@ app.post('/api/checkMember', function(req, res) {
         success: function(users) { 
             if(users.length === 1) {
                 var user = users[0];
-                user.increment("count");
-                user.save();
+                
+                var timeCheck = Math.abs(new Date() - user.updatedAt); 
+                if(timeCheck/1000 > 3600) {
+                    user.increment("count");
+                    user.save();    
+                    res.json({"memberExists" : true, "validEntry": true});
+                }
+                else { 
+                    res.json({"memberExists" : true, "validEntry": false});
+                }
+                
 
-                res.json({"memberExists" : true}); 
+                 
             }
             else if(users.length === 0) {
                 res.json({"memberExists" : false});
@@ -75,12 +84,25 @@ app.post('/api/newMember', function(req, res) {
     
     var UserObject = Parse.Object.extend("UserObject"); 
     var userObject = new UserObject(); 
+    var email = new sendgrid.Email();
+    
+    
+    var subject = 'Welcome to E-Club, ' + req.body.first + '!';
+    var recipient = req.body.pid + '@vt.edu'; 
+    email.addTo(recipient); 
+    email.setFrom('President@vteclub.org'); 
+    email.setSubject(subject);
+    email.setHtml("Thanks for coming to the meeting today! To stay up to date with our events, sign up for the weekly newsletter here: http://www.vteclub.org/"); 
+    sendgrid.send(email); 
     
     
     userObject.save({pid : req.body.pid, count:1, first: req.body.first, last: req.body.last}).then(function(object) { 
        
         res.json({"memberCreated" : true});           
     });
+    
+    
+    
     
     
 });

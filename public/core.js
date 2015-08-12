@@ -17,8 +17,12 @@ function mainController($scope, $http) {
                 }
                 else {
                     
-                
-                    window.open("existingmember.html?" + pidVal, "_self"); 
+                    if(data.validEntry === true) {
+                        window.open("existingmember.html?" + pidVal, "_self"); 
+                    }
+                    else {
+                        alert("You've already signed in for this meeting!");   
+                    }
                 }
             })
             .error(function(error) {
