@@ -37,6 +37,9 @@ app.get('/', function(req,res) {
     res.sendfile('./public/index.html'); 
 });
 
+app.get('/management', function(req, res) {
+   res.sendfile('./public/management.html');  
+});
 
 app.post('/api/checkMember', function(req, res) {
 

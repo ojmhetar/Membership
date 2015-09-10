@@ -24,7 +24,8 @@
                         <ol class="questions">
                             <li>
                                 <span>
-                                    <label for="q1" >Enter your pid</label>
+                                    <label id="introHead" for="q1" >Entrepreneur Club</label>
+                                    <label id="subHead"> Please enter your pid to sign in. </label>
                                 </span>
                                 <input id="pid" type="text">
                             </li>
@@ -49,6 +50,7 @@
             			new stepsForm( theForm, {
             				onSubmit : function( form ) {
             					// hide form
+                                
             					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
             
             					/*

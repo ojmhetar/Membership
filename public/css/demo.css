@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,700,400italic);
 
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -9,9 +9,22 @@ body {
 	background: #404040;
 	color: rgba(0,0,0,0.45);
 	font-size: 100%;
-	line-height: 1.25;
+	line-height: 1.40;
 	font-family: 'Lato', Arial, sans-serif;
+
 }
+
+#introHead {
+    font-size: 200%; 
+    text-align: center;       
+}
+
+#subHead {
+    text-align: center; 
+    font-size: 50%; 
+    color: rgba(255,255,255, .75);
+}
+
 
 a {
 	color: rgba(0,0,0,0.25);
@@ -30,15 +43,19 @@ section {
     color: #FF6600; 
 }
 
-
-
-#welcomeBack {
-    font-size: 3em;     
-    
+#welcomeBox {
+    display:none;
 }
 
-#welcomeBack h3 {
-    font-weight: normal; 
+#welcomeBack {
+    font-size: 6em;     
+    font-weight: 100;
+}
+
+#meetingAmount {
+    font-size: 3em;
+    font-weight: 100; 
+    color: rgba(255,255,255, .75);
 }
 
 .questions input {

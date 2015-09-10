@@ -15,12 +15,22 @@
         <script src="core.js"></script> 
 	</head>
 	<body  ng-controller="callController">
-		<div class="container">
-			<section id="welcomeBack">
-                <h2 > Welcome back,  {{firstName}}!</h2>
-                <h3> You've been to <b>{{meetingCount}} meetings. </b></h3>
+		<div id="welcomeBox" class="container">
+			<section>
+                <h3 id="welcomeBack"> Welcome back,  {{firstName}}!</h3>
+                <label id="meetingAmount">You've been to <b>{{meetingCount}} meetings. </b> </label>
 			</section>
 		</div><!-- /container -->
+        
+        <script> 
+            $(window).load(function(){ 
+                $('#welcomeBox').fadeIn(3000);
+            });
+        
+            setTimeout(function() {
+                window.location.replace(window.location.protocol + '//' + window.location.host); 
+            }, 5000);
+        </script>
 		
 
 	</body>
