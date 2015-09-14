@@ -1,0 +1,276 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/local/bin/node
+5 verbose readDependencies loading dependencies from /Users/ojmhetar/Projects/EClub Membership/package.json
+6 warn package.json eclub-membership@0.0.1 No repository field.
+7 warn package.json eclub-membership@0.0.1 No README data
+8 warn package.json eclub-membership@0.0.1 No license field.
+9 verbose install where, deps [ '/Users/ojmhetar/Projects/EClub Membership',
+9 verbose install   [ 'express',
+9 verbose install     'request',
+9 verbose install     'parse',
+9 verbose install     'parse/node',
+9 verbose install     'sendgrid',
+9 verbose install     'body-parser' ] ]
+10 verbose install where, peers [ '/Users/ojmhetar/Projects/EClub Membership', [] ]
+11 verbose installManyTop reading for lifecycle /Users/ojmhetar/Projects/EClub Membership/package.json
+12 info preinstall eclub-membership@0.0.1
+13 verbose installManyTop reading scoped package data from /Users/ojmhetar/Projects/EClub Membership/node_modules/body-parser/package.json
+14 verbose installManyTop reading scoped package data from /Users/ojmhetar/Projects/EClub Membership/node_modules/express/package.json
+15 verbose installManyTop reading scoped package data from /Users/ojmhetar/Projects/EClub Membership/node_modules/parse/package.json
+16 verbose installManyTop reading scoped package data from /Users/ojmhetar/Projects/EClub Membership/node_modules/request/package.json
+17 verbose installManyTop reading scoped package data from /Users/ojmhetar/Projects/EClub Membership/node_modules/sendgrid/package.json
+18 info package.json parse@1.5.0 No repository field.
+19 info package.json parse@1.5.0 No README data
+20 info package.json parse@1.5.0 No license field.
+21 verbose readDependencies loading dependencies from /Users/ojmhetar/Projects/EClub Membership/package.json
+22 verbose targetResolver reading package data from /Users/ojmhetar/Projects/EClub Membership/node_modules/body-parser/package.json
+23 verbose targetResolver reading package data from /Users/ojmhetar/Projects/EClub Membership/node_modules/express/package.json
+24 verbose targetResolver reading package data from /Users/ojmhetar/Projects/EClub Membership/node_modules/parse/package.json
+25 verbose targetResolver reading package data from /Users/ojmhetar/Projects/EClub Membership/node_modules/request/package.json
+26 verbose targetResolver reading package data from /Users/ojmhetar/Projects/EClub Membership/node_modules/sendgrid/package.json
+27 silly cache add args [ 'sendgrid@latest', null ]
+28 verbose cache add spec sendgrid@latest
+29 silly cache add args [ 'body-parser@latest', null ]
+30 verbose cache add spec body-parser@latest
+31 silly cache add args [ 'express@latest', null ]
+32 verbose cache add spec express@latest
+33 silly cache add args [ 'request@latest', null ]
+34 verbose cache add spec request@latest
+35 silly cache add args [ 'parse@latest', null ]
+36 verbose cache add spec parse@latest
+37 silly cache add parsed spec { raw: 'sendgrid@latest',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'sendgrid',
+37 silly cache add   rawSpec: 'latest',
+37 silly cache add   spec: 'latest',
+37 silly cache add   type: 'tag' }
+38 silly addNamed sendgrid@latest
+39 verbose addNamed "latest" is being treated as a dist-tag for sendgrid
+40 info addNameTag [ 'sendgrid', 'latest' ]
+41 silly mapToRegistry name sendgrid
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/sendgrid
+45 verbose addNameTag registry:https://registry.npmjs.org/sendgrid not in flight; fetching
+46 silly cache add parsed spec { raw: 'body-parser@latest',
+46 silly cache add   scope: null,
+46 silly cache add   name: 'body-parser',
+46 silly cache add   rawSpec: 'latest',
+46 silly cache add   spec: 'latest',
+46 silly cache add   type: 'tag' }
+47 silly addNamed body-parser@latest
+48 verbose addNamed "latest" is being treated as a dist-tag for body-parser
+49 info addNameTag [ 'body-parser', 'latest' ]
+50 silly mapToRegistry name body-parser
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+54 verbose addNameTag registry:https://registry.npmjs.org/body-parser not in flight; fetching
+55 silly cache add parsed spec { raw: 'express@latest',
+55 silly cache add   scope: null,
+55 silly cache add   name: 'express',
+55 silly cache add   rawSpec: 'latest',
+55 silly cache add   spec: 'latest',
+55 silly cache add   type: 'tag' }
+56 silly addNamed express@latest
+57 verbose addNamed "latest" is being treated as a dist-tag for express
+58 info addNameTag [ 'express', 'latest' ]
+59 silly mapToRegistry name express
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry uri https://registry.npmjs.org/express
+63 verbose addNameTag registry:https://registry.npmjs.org/express not in flight; fetching
+64 silly cache add parsed spec { raw: 'request@latest',
+64 silly cache add   scope: null,
+64 silly cache add   name: 'request',
+64 silly cache add   rawSpec: 'latest',
+64 silly cache add   spec: 'latest',
+64 silly cache add   type: 'tag' }
+65 silly addNamed request@latest
+66 verbose addNamed "latest" is being treated as a dist-tag for request
+67 info addNameTag [ 'request', 'latest' ]
+68 silly mapToRegistry name request
+69 silly mapToRegistry using default registry
+70 silly mapToRegistry registry https://registry.npmjs.org/
+71 silly mapToRegistry uri https://registry.npmjs.org/request
+72 verbose addNameTag registry:https://registry.npmjs.org/request not in flight; fetching
+73 silly cache add parsed spec { raw: 'parse@latest',
+73 silly cache add   scope: null,
+73 silly cache add   name: 'parse',
+73 silly cache add   rawSpec: 'latest',
+73 silly cache add   spec: 'latest',
+73 silly cache add   type: 'tag' }
+74 silly addNamed parse@latest
+75 verbose addNamed "latest" is being treated as a dist-tag for parse
+76 info addNameTag [ 'parse', 'latest' ]
+77 silly mapToRegistry name parse
+78 silly mapToRegistry using default registry
+79 silly mapToRegistry registry https://registry.npmjs.org/
+80 silly mapToRegistry uri https://registry.npmjs.org/parse
+81 verbose addNameTag registry:https://registry.npmjs.org/parse not in flight; fetching
+82 silly cache add args [ 'parse/node@latest', null ]
+83 verbose cache add spec parse/node@latest
+84 silly cache add parsed spec { raw: 'parse/node@latest',
+84 silly cache add   scope: null,
+84 silly cache add   name: null,
+84 silly cache add   rawSpec: 'parse/node@latest',
+84 silly cache add   spec: '/Users/ojmhetar/Projects/EClub Membership/parse/node@latest',
+84 silly cache add   type: 'local' }
+85 error addLocal Could not install /Users/ojmhetar/Projects/EClub Membership/parse/node@latest
+86 verbose request uri https://registry.npmjs.org/body-parser
+87 verbose request no auth needed
+88 info attempt registry request try #1 at 4:08:39 PM
+89 verbose request id e7f0eca8c9d8ab74
+90 verbose etag "ZAPBHD8DDJ09HX8WNQSOUF72"
+91 http request GET https://registry.npmjs.org/body-parser
+92 verbose request uri https://registry.npmjs.org/sendgrid
+93 verbose request no auth needed
+94 info attempt registry request try #1 at 4:08:39 PM
+95 verbose etag "E5PNUQ3L64OLWL4M3VP8IXSF8"
+96 http request GET https://registry.npmjs.org/sendgrid
+97 verbose request uri https://registry.npmjs.org/request
+98 verbose request no auth needed
+99 info attempt registry request try #1 at 4:08:39 PM
+100 verbose etag "1Q01G0PIN03M2UX1Y6YEGCBUN"
+101 http request GET https://registry.npmjs.org/request
+102 verbose request uri https://registry.npmjs.org/parse
+103 verbose request no auth needed
+104 info attempt registry request try #1 at 4:08:39 PM
+105 verbose etag "E6D1Q84CJWHSE6VS4AC3PKIJ9"
+106 http request GET https://registry.npmjs.org/parse
+107 verbose request uri https://registry.npmjs.org/express
+108 verbose request no auth needed
+109 info attempt registry request try #1 at 4:08:39 PM
+110 verbose etag "BAVBYQZRLS8E6N10PJGSKQMGG"
+111 http request GET https://registry.npmjs.org/express
+112 http 304 https://registry.npmjs.org/parse
+113 silly get cb [ 304,
+113 silly get   { date: 'Mon, 14 Sep 2015 20:08:40 GMT',
+113 silly get     via: '1.1 varnish',
+113 silly get     'cache-control': 'max-age=60',
+113 silly get     etag: '"E6D1Q84CJWHSE6VS4AC3PKIJ9"',
+113 silly get     age: '20',
+113 silly get     connection: 'keep-alive',
+113 silly get     'x-served-by': 'cache-jfk1030-JFK',
+113 silly get     'x-cache': 'HIT',
+113 silly get     'x-cache-hits': '1',
+113 silly get     'x-timer': 'S1442261320.291879,VS0,VE0',
+113 silly get     vary: 'Accept' } ]
+114 verbose etag https://registry.npmjs.org/parse from cache
+115 verbose get saving parse to /Users/ojmhetar/.npm/registry.npmjs.org/parse/.cache.json
+116 http 304 https://registry.npmjs.org/express
+117 silly get cb [ 304,
+117 silly get   { date: 'Mon, 14 Sep 2015 20:08:40 GMT',
+117 silly get     via: '1.1 varnish',
+117 silly get     'cache-control': 'max-age=60',
+117 silly get     etag: '"BAVBYQZRLS8E6N10PJGSKQMGG"',
+117 silly get     age: '43',
+117 silly get     connection: 'keep-alive',
+117 silly get     'x-served-by': 'cache-jfk1028-JFK',
+117 silly get     'x-cache': 'HIT',
+117 silly get     'x-cache-hits': '1',
+117 silly get     'x-timer': 'S1442261320.294635,VS0,VE4',
+117 silly get     vary: 'Accept' } ]
+118 verbose etag https://registry.npmjs.org/express from cache
+119 verbose get saving express to /Users/ojmhetar/.npm/registry.npmjs.org/express/.cache.json
+120 http 304 https://registry.npmjs.org/sendgrid
+121 silly get cb [ 304,
+121 silly get   { date: 'Mon, 14 Sep 2015 20:08:40 GMT',
+121 silly get     via: '1.1 varnish',
+121 silly get     'cache-control': 'max-age=60',
+121 silly get     etag: '"E5PNUQ3L64OLWL4M3VP8IXSF8"',
+121 silly get     age: '0',
+121 silly get     connection: 'keep-alive',
+121 silly get     'x-served-by': 'cache-jfk1029-JFK',
+121 silly get     'x-cache': 'HIT',
+121 silly get     'x-cache-hits': '1',
+121 silly get     'x-timer': 'S1442261320.298863,VS0,VE20',
+121 silly get     vary: 'Accept' } ]
+122 verbose etag https://registry.npmjs.org/sendgrid from cache
+123 verbose get saving sendgrid to /Users/ojmhetar/.npm/registry.npmjs.org/sendgrid/.cache.json
+124 silly addNameTag next cb for parse with tag latest
+125 silly addNamed parse@1.6.1
+126 verbose addNamed "1.6.1" is a plain semver version for parse
+127 silly addNameTag next cb for express with tag latest
+128 silly addNamed express@4.13.3
+129 verbose addNamed "4.13.3" is a plain semver version for express
+130 silly addNameTag next cb for sendgrid with tag latest
+131 silly addNamed sendgrid@1.9.2
+132 verbose addNamed "1.9.2" is a plain semver version for sendgrid
+133 silly cache afterAdd parse@1.6.1
+134 verbose afterAdd /Users/ojmhetar/.npm/parse/1.6.1/package/package.json not in flight; writing
+135 silly cache afterAdd express@4.13.3
+136 verbose afterAdd /Users/ojmhetar/.npm/express/4.13.3/package/package.json not in flight; writing
+137 silly cache afterAdd sendgrid@1.9.2
+138 verbose afterAdd /Users/ojmhetar/.npm/sendgrid/1.9.2/package/package.json not in flight; writing
+139 http 200 https://registry.npmjs.org/body-parser
+140 silly get cb [ 200,
+140 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+140 silly get     etag: '"D73RA3ZIGGQ4O8SLF8VGHFEKL"',
+140 silly get     'content-type': 'application/json',
+140 silly get     'cache-control': 'max-age=60',
+140 silly get     'content-length': '106387',
+140 silly get     'accept-ranges': 'bytes',
+140 silly get     date: 'Mon, 14 Sep 2015 20:08:40 GMT',
+140 silly get     via: '1.1 varnish',
+140 silly get     age: '42',
+140 silly get     connection: 'keep-alive',
+140 silly get     'x-served-by': 'cache-jfk1022-JFK',
+140 silly get     'x-cache': 'HIT',
+140 silly get     'x-cache-hits': '4',
+140 silly get     'x-timer': 'S1442261320.295117,VS0,VE0',
+140 silly get     vary: 'Accept' } ]
+141 verbose get saving body-parser to /Users/ojmhetar/.npm/registry.npmjs.org/body-parser/.cache.json
+142 http 200 https://registry.npmjs.org/request
+143 silly get cb [ 200,
+143 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+143 silly get     etag: '"203PX6J7ONIBBG4ER3G9RKGI4"',
+143 silly get     'content-type': 'application/json',
+143 silly get     'cache-control': 'max-age=60',
+143 silly get     'content-length': '165507',
+143 silly get     'accept-ranges': 'bytes',
+143 silly get     date: 'Mon, 14 Sep 2015 20:08:40 GMT',
+143 silly get     via: '1.1 varnish',
+143 silly get     age: '27',
+143 silly get     connection: 'keep-alive',
+143 silly get     'x-served-by': 'cache-jfk1024-JFK',
+143 silly get     'x-cache': 'HIT',
+143 silly get     'x-cache-hits': '491',
+143 silly get     'x-timer': 'S1442261320.292454,VS0,VE0',
+143 silly get     vary: 'Accept' } ]
+144 verbose get saving request to /Users/ojmhetar/.npm/registry.npmjs.org/request/.cache.json
+145 verbose afterAdd /Users/ojmhetar/.npm/parse/1.6.1/package/package.json written
+146 verbose afterAdd /Users/ojmhetar/.npm/express/4.13.3/package/package.json written
+147 info already installed express@4.13.3
+148 verbose afterAdd /Users/ojmhetar/.npm/sendgrid/1.9.2/package/package.json written
+149 info already installed sendgrid@1.9.2
+150 silly addNameTag next cb for body-parser with tag latest
+151 silly addNamed body-parser@1.13.3
+152 verbose addNamed "1.13.3" is a plain semver version for body-parser
+153 silly addNameTag next cb for request with tag latest
+154 silly addNamed request@2.61.0
+155 verbose addNamed "2.61.0" is a plain semver version for request
+156 silly cache afterAdd body-parser@1.13.3
+157 verbose afterAdd /Users/ojmhetar/.npm/body-parser/1.13.3/package/package.json not in flight; writing
+158 silly cache afterAdd request@2.61.0
+159 verbose afterAdd /Users/ojmhetar/.npm/request/2.61.0/package/package.json not in flight; writing
+160 verbose afterAdd /Users/ojmhetar/.npm/body-parser/1.13.3/package/package.json written
+161 info already installed body-parser@1.13.3
+162 verbose afterAdd /Users/ojmhetar/.npm/request/2.61.0/package/package.json written
+163 verbose stack Error: ENOENT, open '/Users/ojmhetar/Projects/EClub Membership/parse/node@latest'
+163 verbose stack     at Error (native)
+164 verbose cwd /Users/ojmhetar/Projects/EClub Membership
+165 error Darwin 14.5.0
+166 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+167 error node v0.12.7
+168 error npm  v2.11.3
+169 error path /Users/ojmhetar/Projects/EClub Membership/parse/node@latest
+170 error code ENOENT
+171 error errno -2
+172 error enoent ENOENT, open '/Users/ojmhetar/Projects/EClub Membership/parse/node@latest'
+172 error enoent This is most likely not a problem with npm itself
+172 error enoent and is related to npm not being able to find a file.
+173 verbose exit [ -2, true ]
