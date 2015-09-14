@@ -8,7 +8,7 @@ var express = require('express');
 var path = require('path'); 
 var http = require('http');
 var sendgrid = require("sendgrid")(process.env.SGUSER, process.env.SGKEY);
-var Parse = require("parse").Parse;
+var Parse = require("parse/node").Parse;
 Parse.initialize(process.env.PARSEAPPECLUB, process.env.PARSEJSECLUB);
 var localStorage = require('localStorage');
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
