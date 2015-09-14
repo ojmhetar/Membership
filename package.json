@@ -11,6 +11,8 @@
     "express"    : "latest",
     "request"    : "latest",	
     "parse"	 : "latest",
+    "localStorage" : "latest",
+    "xmlhttprequest" : "latest",
     "sendgrid"   : "latest",
     "body-parser": "latest"
   }

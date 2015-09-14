@@ -10,6 +10,8 @@ var http = require('http');
 var sendgrid = require("sendgrid")(process.env.SGUSER, process.env.SGKEY);
 var Parse = require("parse").Parse;
 Parse.initialize(process.env.PARSEAPPECLUB, process.env.PARSEJSECLUB);
+var localStorage = require('localStorage');
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 var email = new sendgrid.Email();
 
